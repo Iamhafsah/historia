@@ -10,7 +10,7 @@ export default function Home({artworks}) {
 }
 
 export const getStaticProps = async() => {
-  const res = await fetch(`https://openaccess-api.clevelandart.org/api/artworks/?q=africa&skip=2&limit=3`)
+  const res = await fetch(`https://openaccess-api.clevelandart.org/api/artworks/?q=art&limit=2&has_image=1`)
   const artworks = await res.json();
 
   return{

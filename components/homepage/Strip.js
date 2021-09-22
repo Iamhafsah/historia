@@ -8,7 +8,8 @@ const TextWrap = ctl(`
     lg:mt-0
     bg-red-900
     text-white
-    py-[.8em]
+    md:py-[.8em]
+    py-[.5em]
     px-24
     transition
     duration-[18s]

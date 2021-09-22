@@ -4,9 +4,8 @@ const footerstyle = ctl(`
     text-center
     text-xl 
     md:text-2xl
-    absolute
+    relative
     bottom-0
-    left-[45%]
     pb-8
 `)
 const Footer = () => {

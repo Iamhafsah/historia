@@ -8,9 +8,12 @@ const heroStyle=ctl(`
     font-bold
     uppercase
     text-right
-    pr-32
+    md:pr-32
+    pr-20
     xl:-mt-12
     md:-mt-2
+    md:h-auto
+    h-[30vh]
 `)
 const bottomTextStyle = (`
     -mt-24
