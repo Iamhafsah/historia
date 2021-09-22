@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+    .moving{
+        @apply inline-block ;
+    }
+    .moving:hover{
+       animation-play-state: paused;
+       @apply cursor-pointer;
+    }
+}

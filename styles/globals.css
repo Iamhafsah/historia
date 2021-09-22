@@ -1,0 +1,17 @@
+@import 'tailwind.css';
+
+body{
+    @apply bg-pink-50;
+}
+
+.nav-ul li{
+    @apply -ml-4 lg:-ml-8;
+    @apply text-xl md:text-2xl;
+    @apply pr-4;
+
+}
+.nav-ul li a{
+    @apply pr-8 lg:pr-12;
+    @apply hover:text-gray-500;
+}
+
