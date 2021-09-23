@@ -6,8 +6,14 @@
     .moving{
         @apply inline-block ;
     }
-    .moving:hover{
+    .moving:hover, .art-display:hover{
        animation-play-state: paused;
        @apply cursor-pointer;
+    }
+    /* .art-display{
+        display: inline-block;
+    } */
+    .art-display::-webkit-scrollbar{
+        display: none;
     }
 }

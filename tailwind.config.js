@@ -15,7 +15,7 @@ module.exports = {
         }
       },
       animation: {
-        "moving-text": "moving-text 18s linear infinite"
+        "moving-text": "moving-text 15s linear infinite"
       }
     },
   },

@@ -25,11 +25,11 @@ w-16
 const Header = () => {
     return (
         <nav className={navWrap}>
-            <span className={logoStyle}>Historia</span>
+            <span className={logoStyle}><Link href="/">Historia</Link> </span>
             
             <ul className={navListStyle}>
                 <li><Link href='/about'>About</Link></li>
-                <li><Link href='/'>Gallery</Link></li>
+                <li><Link href='/gallery'>Gallery</Link></li>
                 <li><Link href='/contact'>Contact</Link></li>
             </ul>
         </nav>
@@ -37,3 +37,4 @@ const Header = () => {
 }
 
 export default Header
+

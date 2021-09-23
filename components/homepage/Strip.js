@@ -6,20 +6,19 @@ const TextWrap = ctl(`
     box-border
     mt-16
     lg:mt-0
-    bg-red-900
-    text-white
     md:py-[.8em]
     py-[.5em]
     px-24
-    transition
-    duration-[18s]
-    motion-safe:animate-moving-text
-    moving
+   
 `)
 const movingTextStyle= ctl(`
     text-xl 
     md:text-2xl
     uppercase
+    transition
+    duration-[18s]
+    motion-safe:animate-moving-text
+    moving
 `)
 
 const Strip = () => {
