@@ -15,13 +15,13 @@ body{
 }
 .nav-ul li a{
     @apply pr-8 lg:pr-12;
-    @apply hover:text-gray-600;
+    @apply hover:underline;
 }
 .footer-list-style li a{
     @apply pr-8;
     @apply text-base sm:text-xl md:text-2xl;
-    @apply hover:text-gray-300;
+    @apply hover:underline;
 }
 .about-div p{
-    @apply mb-4;
+    @apply mb-8;
 }

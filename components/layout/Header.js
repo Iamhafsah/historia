@@ -13,6 +13,9 @@ font-semibold
 transform 
 -rotate-90
 w-16
+hover:-translate-y-4
+transition
+cursor-pointer
 `)
 const navListStyle = ctl(`
 flex 

@@ -8,14 +8,14 @@ const TextWrap = ctl(`
     lg:mt-0
     md:py-[.8em]
     py-[.5em]
-    px-24
+    px-12
    
 `)
 const movingTextStyle= ctl(`
-    text-xl 
+    sm:text-xl 
     md:text-2xl
     uppercase
-    transition-all
+    transition
     duration-[18s]
     motion-safe:animate-moving-text
     moving
