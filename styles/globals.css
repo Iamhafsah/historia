@@ -25,3 +25,25 @@ body{
 .about-div p{
     @apply mb-8;
 }
+.contact-div{
+    @apply px-32;
+    @apply md:px-0;
+    @apply xl:px-24;
+    @apply py-24;
+    @apply md:flex;
+}
+.contact-div p{
+    @apply border-4;
+    @apply border-gray-900;
+    @apply mb-4;
+    @apply max-w-max;
+    @apply px-8;
+    @apply md:px-4;
+    @apply lg:px-16;
+    @apply py-4;
+    @apply md:ml-8;
+    @apply md:text-xl;
+    @apply cursor-pointer;
+    @apply hover:-translate-y-4;
+    @apply transition;
+}

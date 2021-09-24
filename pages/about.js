@@ -1,14 +1,29 @@
-import { HeroText , Strip } from "../components"
+import { HeroText } from "../components"
 import { ImQuotesLeft } from "react-icons/im";
 import { ImQuotesRight } from "react-icons/im";
+import ctl from "@netlify/classnames-template-literals"
 
+const aboutWrap = ctl(`
+    md:text-2xl 
+    sm:text-xl 
+    md:mx-28 
+    mx-12 
+    mt-16 
+    mb-24 
+    about-div 
+    text-gray-700 
+    border-l-4 
+    border-r-4 
+    border-gray-700 
+    md:px-12
+    px-8
+`)
 const About = () => {
     return (
         <div>
-            <HeroText topText="About" bottomText="Historia"/>
+            <HeroText topText="About" bottomText="Historia "/>
 
-            <Strip/>
-            <div className="md:text-2xl sm:text-xl md:mx-28 mx-12 mt-16 mb-24 about-div text-gray-700 border-l-4 border-r-4 border-gray-700 px-12">
+            <div className={aboutWrap}>
                 <p>Historia came into existence as a result of me wanting to work on a fun project. Working on it was fulfilling because I had the opportunity to learn a lot of things - those relating to art as well as technology. </p>
                 <p>
                     Art is an everlasting gift to the world. It can be seen many years after it was created. Historia seeks to celebrate artworks and artists, and showcase the beautiful works that have graced the earth and our eyes.

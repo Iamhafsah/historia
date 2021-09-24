@@ -15,7 +15,8 @@ export const getStaticProps = async() => {
     const artworks = await res.json();
   
     return{
-        props: {artworks}
+        props: {artworks},
+        revalidate: 1
     }
   }
   

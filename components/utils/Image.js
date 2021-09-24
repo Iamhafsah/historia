@@ -1,5 +1,7 @@
 import Image from "next/image"
 import ctl from '@netlify/classnames-template-literals'
+import Link from "next/link"
+
 
 const imageDivStyle = ctl(`
     w-[40vw]
@@ -19,9 +21,11 @@ const imgLoader = ({src, width, quality}) => {
 }
 
 const ImageComponent = ({art, height,width, imgStyle}) => {
+
     return (
         <div className="text-left">
             <div className={imageDivStyle}>
+            <Link href={`/galleria/${art.id}`}>
                 <Image 
                     loader={imgLoader}
                     src={art.images.web.url}
@@ -31,6 +35,7 @@ const ImageComponent = ({art, height,width, imgStyle}) => {
                     className={`${imageStyle} ${imgStyle}`}
                     layout="responsive"
                 />
+            </Link>
             </div>
         
             <span>{art.title}</span>

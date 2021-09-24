@@ -3,21 +3,20 @@ import { ImQuotesLeft } from "react-icons/im";
 import { ImQuotesRight } from "react-icons/im";
 import { HeroText } from "../../components";
 
-
 const index = ({artworks}) => {
+    
     return (
         <>
         <HeroText topText="The" bottomText="Gallery" />
-        
-        <div className="grid grid-cols-2 gap-12 max-w-[90vw] px-12 mx-auto">
+        <div className="grid grid-cols-2 gap-12 md:px-12 pr-14 pl-8 pt-12">
             {artworks.data.map((art, i) => (
                 <ImageComponent
                 key={i}
                 art={art}
                 height={100}
                 width={100}
-                />
-            ))}
+                />            
+                ))}
         </div>
 
         <div>

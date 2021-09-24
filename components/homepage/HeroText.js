@@ -1,10 +1,12 @@
 import ctl from '@netlify/classnames-template-literals'
+import { Strip } from '..'
 
 const heroStyle=ctl(`
     xl:text-[10em]
     lg:text-[9em]
     md:text-[6em]
-    text-[3.5em]
+    sm:text-[3.5rem]
+    text-[2.5em]
     font-bold
     uppercase
     text-right
@@ -16,16 +18,20 @@ const heroStyle=ctl(`
     h-[30vh]
 `)
 const bottomTextStyle = (`
-    -mt-24
+    sm:-mt-24
+    -mt-16
     md:-mt-44
     lg:mt-[-2em]
 `)
 const HeroText = ({topText, bottomText}) => {
     return (
+        <>
         <div className={heroStyle}>
             <h1>{topText}</h1><br/>
             <h1 className={bottomTextStyle}>{bottomText}</h1>
         </div>
+        <Strip/>
+        </>
     )
 }
 
