@@ -4,7 +4,7 @@ import { ImQuotesRight } from "react-icons/im";
 const Quote2 = () => {
     return (
         <>
-        <span className="relative lg:left-[70%] left-[60%] font-semibold">~🎨</span>
+        <span className="relative lg:left-[70%] left-[60%] font-semibold md:text-3xl text-xl">~🎨</span>
         <div className="w-[60vw] lg:pt-16 lg:pb-24 py-12 mx-auto">
             <ImQuotesLeft/>
             <span className="w-[90%] px-8 md:text-4xl">Art evokes the mystery without which the world would not exist.</span>

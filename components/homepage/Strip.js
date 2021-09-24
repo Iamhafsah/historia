@@ -15,7 +15,7 @@ const movingTextStyle= ctl(`
     text-xl 
     md:text-2xl
     uppercase
-    transition
+    transition-all
     duration-[18s]
     motion-safe:animate-moving-text
     moving

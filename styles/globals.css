@@ -9,7 +9,7 @@ body{
 
 .nav-ul li{
     @apply -ml-4 lg:-ml-8;
-    @apply text-xl md:text-2xl;
+    @apply text-base sm:text-xl md:text-2xl;
     @apply pr-4;
 
 }
@@ -19,6 +19,9 @@ body{
 }
 .footer-list-style li a{
     @apply pr-8;
-    @apply text-xl md:text-2xl;
+    @apply text-base sm:text-xl md:text-2xl;
     @apply hover:text-gray-300;
+}
+.about-div p{
+    @apply mb-4;
 }

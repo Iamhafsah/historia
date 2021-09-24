@@ -14,12 +14,12 @@ const imageWrapStyle=ctl(`
     md:text-2xl
     overflow-x-auto
     transition
-    motion-safe:animate-moving-text
+    motion-safe:animate-moving-images
     art-display
 `)
 
 
-const ArtDisplay = ({artworks}) => {
+const MiddleArtDisplay = ({artworks}) => {
     const displayImages = artworks.data.slice(2, 8)
     return (
         <div className="overflow-hidden ">
@@ -40,4 +40,4 @@ const ArtDisplay = ({artworks}) => {
     )
 }
 
-export default ArtDisplay
+export default MiddleArtDisplay

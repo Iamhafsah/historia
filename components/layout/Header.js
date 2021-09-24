@@ -8,7 +8,7 @@ pt-24
 `)
 const logoStyle = ctl(`
 md:text-3xl
-text-2xl
+text-xl
 font-semibold
 transform 
 -rotate-90

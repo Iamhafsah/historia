@@ -20,11 +20,11 @@ const bottomTextStyle = (`
     md:-mt-44
     lg:mt-[-2em]
 `)
-const HeroText = () => {
+const HeroText = ({topText, bottomText}) => {
     return (
         <div className={heroStyle}>
-            <h1>History</h1><br/>
-            <h1 className={bottomTextStyle}>in pictures</h1>
+            <h1>{topText}</h1><br/>
+            <h1 className={bottomTextStyle}>{bottomText}</h1>
         </div>
     )
 }
