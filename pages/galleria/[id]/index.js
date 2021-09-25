@@ -11,6 +11,7 @@ const Galleria = ({artPiece}) => {
 
             <div className="pt-8 pb-20 w-[75vw] sm:w-[80vw]  mx-10 md:mx-24 lg:mx-28 text-gray-700  ">
                 <p className="font-semibold text-xl md:text-3xl">{art.title}</p>
+
                 <ImageComponent 
                 art={art}
                 height={1500}
@@ -20,7 +21,7 @@ const Galleria = ({artPiece}) => {
                 />
             
             
-                <p className="font-semibold mb-4 text-xl md:text-2xl">{art.creators[0].description}</p>
+                <p className="font-semibold mb-4 text-xl md:text-2xl">Created by {art.creators[0].description}</p>
 
                 <em className=" mb-4 text-xl md:text-2xl">Technique ~ {art.technique}</em>
 
