@@ -16,7 +16,7 @@ const Galleria = ({artPiece}) => {
                 art={art}
                 height={1500}
                 width={2000}
-                galleriaImageStyle="w-full my-8"
+                galleriaImageStyle="galleria-image my-8"
                 single
                 />
             
