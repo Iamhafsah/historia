@@ -20,12 +20,13 @@ const imgLoader = ({src, width, quality}) => {
     return `${src}?w=${width}&q=${quality || 99}`
 }
 
-const ImageComponent = ({art, height,width, imgStyle}) => {
+const ImageComponent = ({art, height,width, imgStyle, gallery}) => {
 
     return (
         <div className="text-left">
             <div className={imageDivStyle}>
-            <Link href={`/galleria/${art.id}`}>
+            {gallery ? (
+                <Link href={`/galleria/${art.id}`}>
                 <Image 
                     loader={imgLoader}
                     src={art.images.web.url}
@@ -35,7 +36,17 @@ const ImageComponent = ({art, height,width, imgStyle}) => {
                     className={`${imageStyle} ${imgStyle}`}
                     layout="responsive"
                 />
-            </Link>
+            </Link>) : (
+                <Image 
+                loader={imgLoader}
+                src={art.images.web.url}
+                alt={art.title}
+                width={width}
+                height={height}
+                className={`${imageStyle} ${imgStyle}`}
+                layout="responsive"
+            />
+            )}
             </div>
         
             <span>{art.title}</span>

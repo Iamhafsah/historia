@@ -15,6 +15,7 @@ const index = ({artworks}) => {
                 art={art}
                 height={100}
                 width={100}
+                gallery
                 />            
                 ))}
         </div>

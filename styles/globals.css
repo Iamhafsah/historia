@@ -26,9 +26,11 @@ body{
     @apply mb-8;
 }
 .contact-div{
-    @apply px-32;
-    @apply md:px-0;
-    @apply xl:px-24;
+    @apply pl-12;
+    @apply sm:pl-0;
+    @apply sm:px-32;
+    @apply md:px-4;
+    @apply lg:px-16;
     @apply py-24;
     @apply md:flex;
 }
@@ -39,10 +41,12 @@ body{
     @apply max-w-max;
     @apply px-8;
     @apply md:px-4;
-    @apply lg:px-16;
+    @apply lg:px-8;
+    @apply xl:px-16;
     @apply py-4;
     @apply md:ml-8;
-    @apply md:text-xl;
+    @apply lg:text-xl;
+    @apply md:text-[1.1rem] ;
     @apply cursor-pointer;
     @apply hover:-translate-y-4;
     @apply transition;
