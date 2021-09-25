@@ -7,9 +7,7 @@ const TextWrap = ctl(`
     mt-16
     lg:mt-0
     md:py-[.8em]
-    py-[.5em]
     px-12
-   
 `)
 const movingTextStyle= ctl(`
     sm:text-xl 
