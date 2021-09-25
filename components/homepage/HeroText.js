@@ -15,7 +15,7 @@ const heroStyle=ctl(`
     xl:-mt-12
     md:-mt-2
     md:h-auto
-    h-[10vh]
+    h-[20vh]
 `)
 const bottomTextStyle = (`
     sm:-mt-24
