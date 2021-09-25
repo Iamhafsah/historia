@@ -8,6 +8,7 @@ const imageDivStyle = ctl(`
     border-4
     border-gray-900
     mr-1
+    bg-gray-600
 `)
 const imageStyle= ctl(`
    filter
