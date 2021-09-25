@@ -9,13 +9,13 @@ const Galleria = ({artPiece}) => {
         <div className=" ">
             <HeroText topText="More" bottomText="Details🎨"/>
 
-            <div className="pt-8 pb-20 w-[75vw] sm:w-[80vw]  mx-10  md:mx-24 lg:mx-28 text-gray-700  ">
-                <p className="font-semibold w-[75vw] sm:w-[80vw] text-xl md:text-3xl">{art.title}</p>
+            <div className="pt-8 pb-20 w-[75vw] sm:w-[80vw]  mx-10 md:mx-24 lg:mx-28 text-gray-700  ">
+                <p className="font-semibold text-xl md:text-3xl">{art.title}</p>
                 <ImageComponent 
                 art={art}
                 height={1500}
                 width={2000}
-                galleriaImageStyle="w-[100%] my-8"
+                galleriaImageStyle="w-full my-8"
                 single
                 />
             
@@ -26,7 +26,7 @@ const Galleria = ({artPiece}) => {
 
                 <p className=" border-l-4 border-r-4 border-gray-700 md:px-12 px-8 my-12 md:text-2xl sm:text-xl " dangerouslySetInnerHTML={{__html:`${art.wall_description}`}}></p>
 
-                <p className="text-xl md:text-2xl">Fun fact 😎~ {art.fun_fact}</p>
+                <p className="sm:text-xl md:text-2xl">Fun fact 😎~ {art.fun_fact}</p>
             </div>
         </div>
     )

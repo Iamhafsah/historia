@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer utilities{
+    body{
+        scroll-behavior: smooth;
+    }
     .moving{
         @apply inline-block ;
     }
