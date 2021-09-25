@@ -20,11 +20,11 @@ const imgLoader = ({src, width, quality}) => {
     return `${src}?w=${width}&q=${quality || 99}`
 }
 
-const ImageComponent = ({art, height,width, imgStyle, gallery}) => {
+const ImageComponent = ({art, height,width, imgStyle, gallery, galleriaImageStyle, single}) => {
 
     return (
         <div className="text-left">
-            <div className={imageDivStyle}>
+            <div className={`${imageDivStyle} ${galleriaImageStyle}`}>
             {gallery ? (
                 <Link href={`/galleria/${art.id}`}>
                 <Image 
@@ -49,7 +49,7 @@ const ImageComponent = ({art, height,width, imgStyle, gallery}) => {
             )}
             </div>
         
-            <span>{art.title}</span>
+            {!single && (<span>{art.title}</span>)}
         </div>
     )
 }
