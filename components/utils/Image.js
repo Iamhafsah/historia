@@ -37,7 +37,7 @@ const ImageComponent = ({art, height,width, imgStyle, gallery, galleriaImageStyl
                     className={`${imageStyle} ${imgStyle}`}
                     layout="responsive"
                 />
-            </Link>) : (
+                </Link>) : (
                 <Image 
                 loader={imgLoader}
                 src={art.images.web.url}
@@ -50,7 +50,10 @@ const ImageComponent = ({art, height,width, imgStyle, gallery, galleriaImageStyl
             )}
             </div>
         
-            {!single && (<span>{art.title}</span>)}
+            {!single && (<>
+            <p className="text-base sm:text-xl md:text-2xl">{art.title}</p>
+            </>
+            )}
         </div>
     )
 }

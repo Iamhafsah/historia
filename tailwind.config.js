@@ -23,8 +23,8 @@ module.exports = {
         }
       },
       animation: {
-        "moving-text": "moving-text 15s linear alternate-reverse infinite",
-        "moving-images": "moving-images 8s linear alternate infinite"
+        "moving-text": "moving-text 25s linear alternate-reverse infinite",
+        "moving-images": "moving-images 18s linear alternate infinite"
       }
     },
   },

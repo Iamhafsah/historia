@@ -18,6 +18,7 @@ const index = ({artworks}) => {
                 gallery
                 />            
                 ))}
+                <span>&rarr;</span>
         </div>
 
         <div>

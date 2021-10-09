@@ -1,12 +1,16 @@
 @import 'tailwind.css';
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
 
 body{
     @apply bg-pink-50;
     @apply text-gray-900;
     @apply m-0;
     @apply p-0;
+    font-family: 'Source Sans Pro', sans-serif;
 }
-
+h1{
+    font-family: 'Playfair Display', serif;
+}
 .nav-ul li{
     @apply -ml-4 lg:-ml-8;
     @apply text-base sm:text-xl md:text-2xl;
