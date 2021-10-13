@@ -8,7 +8,8 @@ const index = ({artworks}) => {
     return (
         <>
         <HeroText topText="The" bottomText="Gallery" />
-        <div className="grid grid-cols-2 gap-12 md:px-12 pr-14 pl-8 pt-12">
+        
+        <div className="grid grid-cols-2 gap-x-12 gap-y-8 md:mx-auto md:pl-24 pr-14 pl-8 pt-12">
             {artworks.data.map((art, i) => (
                 <ImageComponent
                 key={i}
