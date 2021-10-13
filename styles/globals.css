@@ -43,6 +43,7 @@ h1{
     @apply border-gray-900;
     @apply mb-4;
     @apply max-w-max;
+    @apply md:max-w-full;
     @apply px-8;
     @apply md:px-4;
     @apply lg:px-8;
