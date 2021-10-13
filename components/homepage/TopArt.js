@@ -24,6 +24,7 @@ const TopArt = ({artworks}) => {
                 art={art}
                 height={600}
                 width={400}
+                imgStyle="cursor-auto"
                 />
             )) }
         </div>

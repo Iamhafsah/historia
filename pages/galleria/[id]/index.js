@@ -25,7 +25,7 @@ const Galleria = ({artPiece}) => {
 
                 <em className=" mb-4 text-xl md:text-2xl">Technique ~ {art.technique}</em>
 
-                <p className=" border-l-4 border-r-4 border-gray-700 md:px-12 px-8 my-12 md:text-2xl sm:text-xl" dangerouslySetInnerHTML={{__html:`${art.wall_description}`}}></p>
+                <p className=" border-l-4 border-r-4 border-gray-700 md:px-12 px-8 my-12 md:text-2xl sm:text-xl font-light text-gray-900" dangerouslySetInnerHTML={{__html:`${art.wall_description}`}}></p>
 
                 <p className="sm:text-xl md:text-2xl" dangerouslySetInnerHTML={{__html:`Fun fact 😎~ ${art.fun_fact}`}}></p>
             </div>
