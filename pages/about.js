@@ -11,12 +11,12 @@ const aboutWrap = ctl(`
     mt-16 
     mb-24 
     about-div 
-    text-gray-700 
     border-l-4 
     border-r-4 
     border-gray-700 
     md:px-12
     px-8
+    font-light
 `)
 const About = () => {
     return (
