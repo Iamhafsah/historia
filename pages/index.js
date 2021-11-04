@@ -1,4 +1,4 @@
-import {HomePage, TopArt, ArtDisplay, Quotes, Quote2} from "../components";
+import {HomePage} from "../components";
 
 
 export default function Home({artworks}) {
