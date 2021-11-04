@@ -46,9 +46,10 @@ h1{
     @apply py-4;
     @apply md:ml-8;
     @apply lg:text-xl  md:text-[1.1rem] ;
+    @apply font-semibold;
     @apply cursor-pointer;
-    @apply bg-gray-900 hover:bg-pink-50;
-    @apply text-pink-50 hover:text-gray-900;
+    @apply bg-pink-50 hover:bg-gray-900;
+    @apply text-gray-900 hover:text-pink-50;
     @apply transition;
 }
 .galleria-image{
