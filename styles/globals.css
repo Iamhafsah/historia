@@ -30,30 +30,25 @@ h1{
     @apply mb-8;
 }
 .contact-div{
-    @apply pl-12;
-    @apply sm:pl-0;
-    @apply sm:px-32;
-    @apply md:px-4;
-    @apply lg:px-16;
     @apply py-24;
-    @apply md:flex;
+    @apply flex;
+    @apply flex-col;
+    @apply md:flex-row;
+    @apply justify-center;
+    @apply items-center;
 }
 .contact-div p{
     @apply border-4;
     @apply border-gray-900;
     @apply mb-4;
-    @apply max-w-max;
-    @apply md:max-w-full;
-    @apply px-8;
-    @apply md:px-4;
-    @apply lg:px-8;
-    @apply xl:px-16;
+    @apply max-w-max md:max-w-full;
+    @apply px-8 md:px-6  lg:px-8  xl:px-16;
     @apply py-4;
     @apply md:ml-8;
-    @apply lg:text-xl;
-    @apply md:text-[1.1rem] ;
+    @apply lg:text-xl  md:text-[1.1rem] ;
     @apply cursor-pointer;
-    @apply hover:-translate-y-4;
+    @apply bg-gray-900 hover:bg-pink-50;
+    @apply text-pink-50 hover:text-gray-900;
     @apply transition;
 }
 .galleria-image{

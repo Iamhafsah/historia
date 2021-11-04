@@ -13,9 +13,6 @@
        animation-play-state: paused;
        @apply cursor-pointer;
     }
-    /* .art-display{
-        display: inline-block;
-    } */
     .art-display::-webkit-scrollbar{
         display: none;
     }
