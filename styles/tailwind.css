@@ -11,7 +11,6 @@
     }
     .moving:hover, .art-display:hover{
        animation-play-state: paused;
-       @apply cursor-pointer;
     }
     .art-display::-webkit-scrollbar{
         display: none;

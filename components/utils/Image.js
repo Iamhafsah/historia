@@ -13,7 +13,6 @@ const imageDivStyle = ctl(`
 const imageStyle= ctl(`
    filter
    hover:grayscale
-   cursor-pointer  
 `)
 
 // image loader
@@ -34,7 +33,7 @@ const ImageComponent = ({art, height,width, imgStyle, gallery, galleriaImageStyl
                     alt={art.title}
                     width={width}
                     height={height}
-                    className={`${imageStyle} ${imgStyle}`}
+                    className={`${imageStyle} ${imgStyle} cursor-pointer`}
                     layout="responsive"
                 />
                 </Link>) : (

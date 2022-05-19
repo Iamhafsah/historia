@@ -1,5 +1,3 @@
-// import {useRouter} from "next/router";
-
 import { HeroText } from "../../../components";
 import ImageComponent from "../../../components/utils/Image";
 
@@ -9,14 +7,14 @@ const Galleria = ({artPiece}) => {
         <div className=" ">
             <HeroText topText="More" bottomText="Details🎨"/>
 
-            <div className="pt-8 pb-20 w-[75vw] sm:w-[80vw] mx-12  md:mx-24 lg:mx-28 text-gray-700  ">
+            <div className="pt-8 pb-20 w-[75vw] sm:w-[80vw] mx-auto text-gray-700  ">
                 <p className="font-semibold text-xl md:text-3xl">{art.title}</p>
 
                 <ImageComponent 
                 art={art}
                 height={1500}
                 width={2000}
-                galleriaImageStyle="galleria-image my-8"
+                galleriaImageStyle="galleria-image my-8 w-full"
                 single
                 />
             
