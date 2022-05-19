@@ -15,4 +15,7 @@
     .art-display::-webkit-scrollbar{
         display: none;
     }
+    .gallery-image{
+        width: 100%
+    }
 }
