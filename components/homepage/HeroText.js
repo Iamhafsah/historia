@@ -3,7 +3,7 @@ import { Strip } from '..'
 
 const heroStyle=ctl(`
     xl:text-[10em]
-    lg:text-[9em]
+    lg:text-[8em]
     md:text-[6em]
     sm:text-[3.5rem]
     text-[2.5em]
