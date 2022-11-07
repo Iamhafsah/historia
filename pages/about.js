@@ -3,21 +3,6 @@ import { ImQuotesLeft } from "react-icons/im";
 import { ImQuotesRight } from "react-icons/im";
 import ctl from "@netlify/classnames-template-literals"
 
-const aboutWrap = ctl(`
-    md:text-2xl 
-    sm:text-xl 
-    md:mx-28 
-    mx-12 
-    mt-16 
-    mb-24 
-    about-div 
-    border-l-4 
-    border-r-4 
-    border-gray-700 
-    md:px-12
-    px-8
-    font-light
-`)
 const About = () => {
     return (
         <div>
@@ -36,16 +21,33 @@ const About = () => {
             </div>
 
             <>
-         <span className="lg:pl-32 md:pl-20 pl-12 font-semibold md:text-3xl text-xl">~🎨</span>
-        <div className="w-[60vw] lg:py-24 py-8 mx-auto">
-            <ImQuotesLeft/>
-            <span className="w-[90%] px-8 md:text-4xl">Creativity takes courage.</span>
-            <cite className="md:text-xl">― Henri Matisse</cite>
-            <ImQuotesRight className="relative left-[30%]"/>
-        </div>
-        </>
+                <span className="lg:pl-32 md:pl-20 pl-12 font-semibold md:text-3xl text-xl">~🎨</span>
+                <div className="w-[60vw] lg:py-24 py-8 mx-auto">
+                    <ImQuotesLeft/>
+                    <span className="w-[90%] px-8 md:text-4xl">Creativity takes courage.</span>
+                    <cite className="md:text-xl">― Henri Matisse</cite>
+                    <ImQuotesRight className="relative left-[30%]"/>
+                </div>
+            </>
         </div>
     )
 }
 
 export default About
+
+
+const aboutWrap = ctl(`
+    md:text-2xl 
+    sm:text-xl 
+    md:mx-28 
+    mx-12 
+    mt-16 
+    mb-24 
+    about-div 
+    border-l-4 
+    border-r-4 
+    border-gray-700 
+    md:px-12
+    px-8
+    font-light
+`)
