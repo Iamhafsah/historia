@@ -17,6 +17,15 @@ const imageWrapStyle=ctl(`
     motion-safe:animate-moving-images
     art-display
 `)
+const imageDivStyle = ctl(`
+    w-[300px] lg:w-[550px] sm:w-[400px] 
+    relative
+    sm:min-h-[400px] md:min-h-[40vw] h-[300px]
+    border-4
+    border-gray-900
+    mr-1
+    bg-gray-600
+`)
 
 
 const BottomArtDisplay = ({artworks}) => {
@@ -29,8 +38,8 @@ const BottomArtDisplay = ({artworks}) => {
                         <ImageComponent
                         key={i}
                         art={art}
-                        height={400}
-                        width={400}
+                        fill
+                        wrapStyle={imageDivStyle}
                         />
                     )) }
             </div>

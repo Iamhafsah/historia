@@ -4,11 +4,6 @@ import Link from "next/link"
 
 
 const imageDivStyle = ctl(`
-    w-[40vw]
-    border-4
-    border-gray-900
-    mr-1
-    bg-gray-600
 `)
 const imageStyle= ctl(`
    filter
@@ -20,11 +15,11 @@ const imgLoader = ({src, width, quality}) => {
     return `${src}?w=${width}&q=${quality || 99}`
 }
 
-const ImageComponent = ({art, height,width, imgStyle, gallery, galleriaImageStyle, single}) => {
+const ImageComponent = ({art, height,width, imgStyle, gallery, galleriaImageStyle, single, fill, wrapStyle}) => {
 
     return (
         <div className="text-left">
-            <div className={`${imageDivStyle} ${galleriaImageStyle}`}>
+            <div className={`${imageDivStyle} ${galleriaImageStyle} ${wrapStyle}`}>
             {gallery ? (
                 <Link href={`/galleria/${art.id}`}>
                 <Image 
@@ -34,7 +29,7 @@ const ImageComponent = ({art, height,width, imgStyle, gallery, galleriaImageStyl
                     width={width}
                     height={height}
                     className={`${imageStyle} ${imgStyle} cursor-pointer`}
-                    layout="responsive"
+                    fill={fill}
                 />
                 </Link>) : (
                 <Image 
@@ -44,7 +39,7 @@ const ImageComponent = ({art, height,width, imgStyle, gallery, galleriaImageStyl
                 width={width}
                 height={height}
                 className={`${imageStyle} ${imgStyle}`}
-                layout="responsive"
+                fill={fill}
             />
             )}
             </div>

@@ -11,7 +11,15 @@ const imageWrapStyle=ctl(`
     pt-8 
     md:text-2xl
 `)
-
+const imageDivStyle = ctl(`
+    w-[40vw]
+    relative
+    min-h-[60vw]
+    border-4
+    border-gray-900
+    mr-1
+    bg-gray-600
+`)
 const TopArt = ({artworks}) => {
     const topArtwork = artworks.data.slice(0, 2)
 
@@ -22,9 +30,9 @@ const TopArt = ({artworks}) => {
                 <ImageComponent
                 key={i}
                 art={art}
-                height={600}
-                width={400}
                 imgStyle="cursor-auto"
+                fill
+                wrapStyle={imageDivStyle}
                 />
             )) }
         </div>

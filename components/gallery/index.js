@@ -2,8 +2,19 @@ import ImageComponent from "../utils/Image"
 import { ImQuotesLeft } from "react-icons/im";
 import { ImQuotesRight } from "react-icons/im";
 import { HeroText } from "../../components";
+import ctl from '@netlify/classnames-template-literals'
+
 
 const index = ({artworks}) => {
+    const imageDivStyle = ctl(`
+    w-[40vw] sm:w-[40vw] 
+    relative
+    sm:min-h-[300px] h-[40vw]
+    border-4
+    border-gray-900
+    mr-1
+    bg-gray-600
+`)
     
     return (
         <>
@@ -11,13 +22,13 @@ const index = ({artworks}) => {
         
         <div className="grid grid-cols-2 gap-x-12 gap-y-8 md:mx-auto md:pl-24 pr-14 pl-8 pt-12">
             {artworks.data.map((art, i) => (
-                <ImageComponent
-                key={i}
-                art={art}
-                height={100}
-                width={100}
-                gallery
-                />            
+                 <ImageComponent
+                 key={i}
+                 art={art}
+                 fill
+                 wrapStyle={imageDivStyle}
+                 gallery
+                 />         
                 ))}
                 <span>&rarr;</span>
         </div>
