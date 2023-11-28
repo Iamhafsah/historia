@@ -39,7 +39,7 @@ const thisYear = date.getFullYear();
 const Footer = () => {
     return (
         <div className={footerstyle}>
-            <span className={logoStyle}><Link href="/" class="">Historia</Link> </span>
+            <span className={logoStyle}><Link href="/">Historia</Link> </span>
             
             <p className=" md:text-[1.3rem] sm:text-xl  relative -bottom-14 md:mt-12 lg:ml-4 md:ml-8 ">&copy; {thisYear} Historia. Made by <a href="https://github.com/iamhafsah" className="hover:underline">Hafsah</a> </p>
 
