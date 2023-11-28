@@ -14,7 +14,7 @@ const Meta = ({ title, keywords, description }) => {
 }
 
 Meta.defaultProps = {
-    title: 'Historia',
+    title: 'Historia - Celebrating Art 🎨',
     keywords: 'Museum pictures, Historical era, artifacts' ,
     description: "Experience the world's history in pictures"
 }
